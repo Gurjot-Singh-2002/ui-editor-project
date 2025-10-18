@@ -10,13 +10,15 @@
 @media (max-width: 900px) {
   .app-container {
     flex-direction: column;
-    height: auto;
-    overflow-y: auto;
+    height: auto !important;
+    overflow: visible !important;
   }
 
   .editor-panel {
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow-y: visible !important;
     border-right: none;
     border-bottom: 1px solid #ddd;
   }
@@ -24,5 +26,7 @@
   .live-preview {
     width: 100%;
     height: auto;
+    padding: 1rem 0 3rem 0;
   }
 }
+
