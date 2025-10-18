@@ -1,0 +1,30 @@
+.editor-panel {
+  width: 25%;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  /* make it scrollable */
+  height: 100vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* separate hover style */
+.editor-panel button:hover {
+  opacity: 0.9;
+}
+
+.editor-panel h4 {
+  margin-top: 10px;
+  color: #333;
+}
+
+.editor-panel input,
+.editor-panel select {
+  width: 100%;
+  padding: 4px;
+}
