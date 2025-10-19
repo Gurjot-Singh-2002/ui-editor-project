@@ -42,7 +42,7 @@ src/
 ├── context/
 │   └── EditorContext.jsx      # Provides global editor state using React Context API
 │
-├── assets/                    # Images, icons, and design assets
+├── assets/                    # Images stored
 │
 ├── App.js                     # Root component of the application
 ├── App.css                    # Global styles for layout and components
