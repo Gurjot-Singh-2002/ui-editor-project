@@ -29,7 +29,25 @@ The interface is modular, responsive, and suitable for experimenting with design
 
 ## Project Structure
 
-
+```
+src/
+│
+├── components/
+│   ├── EditorPanel.jsx
+│   ├── LayoutDesktop.jsx
+│   ├── ProductGallery.jsx
+│   ├── ProductView.jsx
+│   └── ProductCustomizer.jsx
+│
+├── context/
+│   └── EditorContext.jsx
+│
+├── assets/
+│
+├── App.js
+├── App.css
+└── index.js
+```
 
 ## Getting Started
 
