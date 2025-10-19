@@ -33,14 +33,14 @@ The interface is modular, responsive, and suitable for experimenting with design
 src/
 |
 |-- components/
-| |-- EditorPanel.jsx # Main layout editor panel for UI customization
-| |-- LayoutDesktop.jsx # Desktop preview layout
-| |-- ProductGallery.jsx # Displays product images dynamically
-| |-- ProductView.jsx # Live preview of product and layout
-| |-- ProductCustomizer.jsx # Handles color and customization
+|   |-- EditorPanel.jsx # Main layout editor panel for UI customization
+|   |-- LayoutDesktop.jsx # Desktop preview layout
+|   |-- ProductGallery.jsx # Displays product images dynamically
+|   |-- ProductView.jsx # Live preview of product and layout
+|   |-- ProductCustomizer.jsx # Handles color and customization
 |
 |-- context/
-| |-- EditorContext.jsx # Provides global editor state using React Context API
+|   |-- EditorContext.jsx # Provides global editor state using React Context API
 |
 |-- assets/ # Images stored
 |
