@@ -1,0 +1,24 @@
+.desktop-layout {
+  background-color: var(--layout-bg, transparent);
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  transition: background 0.3s ease, padding 0.3s ease;
+  box-sizing: border-box;
+}
+
+
+/* Customizer */
+.customizer-section {
+  flex-shrink: 0;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.desktop-layout {
+  background-color: var(--layout-bg, #f9f9f9) !important;
+}

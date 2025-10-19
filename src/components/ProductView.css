@@ -1,0 +1,159 @@
+.product-view {
+  position: relative;
+  flex: 1.3;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.preview-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: zoom-out;
+}
+
+.preview-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.close-preview {
+  position: fixed;
+  top: 25px;
+  right: 35px;
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1100;
+  transition: transform 0.2s ease;
+}
+
+.close-preview:hover {
+  transform: scale(1.1);
+  color: #ffdfdf;
+}
+
+.main-product {
+  width: 100%;
+  max-width: 780px;
+  max-height: 540px;
+  object-fit: contain;
+  display: block;
+  position: relative;
+  z-index: 2;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.main-product:hover {
+  transform: scale(1.12);
+}
+
+.shadow {
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 30px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0.15) 35%,
+    rgba(0, 0, 0, 0.08) 60%,
+    transparent 100%
+  );
+  filter: blur(8px);
+  opacity: 0.8;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.action-icons {
+  position: absolute;
+  right: 25px;
+  top: 64%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 3;
+}
+
+.action-icons button {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.action-icons button:hover {
+  background: #f6f6f6;
+}
+
+.view-room {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+}
+
+.view-room:hover {
+  background: #f8f8f8;
+}
+
+/* Font Awesome icon support inside buttons */
+.action-icons button i {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900; /* ensures solid icons show up */
+  font-size: 16px;
+  line-height: 1;
+  pointer-events: none; /* allows clicking the button itself */
+}

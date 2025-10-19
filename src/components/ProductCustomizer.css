@@ -1,0 +1,191 @@
+.subtitle {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+
+.product-customizer {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  height: calc(100vh - 110px); 
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: transparent;
+}
+
+/* Fixed top header */
+.product-customizer h3,
+.product-customizer .subtitle {
+  padding: 16px;
+  background: #fff;
+  z-index: 2;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+}
+
+/* Scrollable middle section */
+.customizer-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 16px;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+  background: #fff;
+}
+
+.customizer-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.customizer-scroll::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+/* Each collapsible section */
+.section {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  font-weight: 500;
+  color: #333;
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+}
+
+.section-content {
+  padding: 10px;
+  background: #fff;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.section-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.section-content::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 3px;
+}
+
+/* Open and highlight states */
+.section.highlight {
+  background: #fdeae7;
+}
+
+.section.open .section-header {
+  background: #fff4f2;
+  font-weight: 600;
+}
+
+/* Color grid */
+.material-type {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #666;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.color-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.color-swatch {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.color-swatch:hover {
+  border-color: #c75e4d;
+}
+
+.color-swatch.selected {
+  border: 2px solid #c75e4d;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+/* Fix bottom price section */
+.price-section {
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  border-top: 1px solid #eee;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  z-index: 3;
+}
+
+.price-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.product-price-label {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 2px;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.price span {
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 6px;
+  font-weight: 400;
+}
+
+.price-section button {
+  padding: 10px 22px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.price-section button:hover {
+  opacity: 0.9;
+}
+
+.section-header i {
+  font-size: 14px;
+  color: #555;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.section.open .section-header i {
+  color: #c75e4d;
+  transform: rotate(180deg);
+}

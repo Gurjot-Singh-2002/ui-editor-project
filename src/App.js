@@ -1,14 +1,14 @@
 import "./App.css";
 import { EditorProvider } from "./context/EditorContext";
 import EditorPanel from "./components/EditorPanel";
-import LivePreview from "./components/LivePreview";
+import LayoutDesktop from "./components/LayoutDesktop";
 
 function App() {
   return (
     <EditorProvider>
       <div className="app-container">
         <EditorPanel />
-        <LivePreview />
+        <LayoutDesktop />  
       </div>
     </EditorProvider>
   );

@@ -1,0 +1,16 @@
+.mobile-layout {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  background: var(--layout-bg, #f9f9f9);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 480px) {
+  .mobile-layout {
+    max-width: 95%;
+    padding: 12px;
+  }
+}
